@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title='';
+    child:string='';
    usertext:string = 'nithiya';
-}
+   usertext1:string = 'nithiya';
+   onChildChange(event:string):void
+{
+ this.child=event;
+}}

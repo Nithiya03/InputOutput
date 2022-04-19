@@ -1,4 +1,7 @@
 <h3>Your Text:</h3>
 <input type="text" [(ngModel)]='usertext'>
 <br>
-<simple [simpleInput]='usertext'></simple><br>
+<h3>parent</h3>
+{{child}}
+<simple [simpleInput]='usertext' (onNameChange)=onChildChange($event)></simple><br>
+
